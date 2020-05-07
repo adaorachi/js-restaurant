@@ -4,29 +4,42 @@ a {
 
 p {
   margin: 0;
-  color: #fff;
+  /* color: #fff; */
 }
 
 section {
   padding: 60px 0;
 }
 
-/* .main-content {
-  display: none;
+.img-fluid {
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
 }
-
-.main-content.active {
-  display: block;
+/* 
+body {
+  scroll-behavior: 
 } */
-
 /* Header / Navbar */
+
+nav {
+  background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95));
+}
 
 .content {
   width: 100%;
   height: 100vh;
+ 
+}
+
+.content .home {
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95)), url("images/header-bg.jpg") center no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  top: 0;
+
 }
 
 .content  > .container {
@@ -41,9 +54,10 @@ section {
 }
 
 .navbar-brand {
+  z-index: 10;
   position: absolute;
-  width: 100%;
-  max-width: 100px;
+  width: 5rem;
+  /* max-width: 100px; */
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -174,7 +188,7 @@ section {
 /* Menu section */
 
 .menu {
-  background-color: #101d2c;
+  /* background-color: #101d2c; */
 }
 
 .shop-info i {
@@ -219,7 +233,7 @@ hr {
 }
 
 .menu-item-desc {
-  padding: 50px 10px;
+  /* padding: 50px 10px; */
   color: #212529;
   margin: auto;
 }
@@ -278,7 +292,7 @@ footer {
   }
 
   .menu-item-desc {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
   }
 }
 

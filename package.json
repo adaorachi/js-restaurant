@@ -20,5 +20,9 @@
     "eslint-plugin-import": "^2.20.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "aos": "^2.3.4"
   }
 }

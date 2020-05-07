@@ -13,7 +13,7 @@ const about = (() => {
                 <h4>Discover</h4>
                 <h1 class="display-4">Our Story</h1>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>We’ve baked every item from the core of our heart to serve you. Since Americans in the South began roasting pigs publicly, Barbecues have been a staple of North American living. For many, grilling becomes a routine mealtime activity.</p>
               <a href="#" class="btn mt-4 mb-5 mb-md-0">Find out more</a>
             </div>
             <div class="col-12 col-md-6" data-aos="fade-up">

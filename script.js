@@ -1,11 +1,11 @@
-$(document).ready(function(){
-  $('.hamburger-menu').on('click', function(){
+$(document).ready(() => {
+  $('.hamburger-menu').on('click', () => {
     $('.toggle').toggleClass('open');
     $('.nav-list').toggleClass('open');
   });
 
   AOS.init({
     easing: 'ease',
-    duration: 1000
+    duration: 1000,
   });
 });
