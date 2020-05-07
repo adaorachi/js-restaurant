@@ -2,7 +2,7 @@ const nav = (() => {
   const navRender = () => {
     const navParent = document.createElement('header');
     navParent.innerHTML = `
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" id="hamburger-menu">
           <i class="fas fa-bars toggle"></i>
           <i class="fas fa-times toggle"></i>
         </div>

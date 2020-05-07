@@ -17,13 +17,12 @@ section {
   /* height: 100%; */
 }
 /* 
-body {
-  scroll-behavior: 
-} */
+
 /* Header / Navbar */
 
 nav {
   background: linear-gradient(rgba(16, 29, 44, 0.95), rgba(16, 29, 44, 0.95));
+  height: 7rem;
 }
 
 .content {
@@ -49,8 +48,8 @@ nav {
   padding: 5rem;
 }
 
-.display-content {
-  /* height: 100vh; */
+.display-content:not(.home) {
+  transform: translateY(5rem);
 }
 
 .navbar-brand {
@@ -135,7 +134,7 @@ nav {
 }
 
 .btn {
-  width: 100px;
+  width: 150px;
   padding: 5px 0!important;
   border: 1px solid #c69963;
   position: relative;
@@ -189,6 +188,7 @@ nav {
 
 .menu {
   /* background-color: #101d2c; */
+  margin-bottom: 5rem;
 }
 
 .shop-info i {
@@ -233,9 +233,11 @@ hr {
 }
 
 .menu-item-desc {
-  /* padding: 50px 10px; */
   color: #212529;
-  margin: auto;
+  margin-bottom: 2rem;
+  border: 1px solid #907452;
+  width: 100%;
+  padding: 0.7rem 1rem;
 }
 
 .menu-item-desc h6 {
@@ -277,6 +279,11 @@ footer {
 /* Media queries */
 
 @media (min-width: 576px) {
+
+  .display-content {
+    transform: initial;
+  }
+
   .navbar-brand {
     max-width: 150px;
   }
@@ -293,6 +300,11 @@ footer {
 
   .menu-item-desc {
     /* padding: 50px 20px; */
+    margin: auto;
+   
+    border: none;
+    width: 100%;
+    padding: 0.7rem 1rem;
   }
 }
 
@@ -303,6 +315,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+  nav{
+    height: 5rem;
+  }
+  
   header > .container {
     padding: 0 15px;
   }

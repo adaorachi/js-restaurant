@@ -1,5 +1,4 @@
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import home from './home';
 import about from './about';
@@ -8,7 +7,6 @@ import team from './team';
 import contact from './contact';
 import nav from './nav';
 import footer from './footer';
-
 
 AOS.init();
 
@@ -22,6 +20,15 @@ const UI = () => {
     container.appendChild(footerContent);
   };
 
+  const closeMenuList = () => {
+    const toggle = document.querySelectorAll('.toggle');
+    const navList = document.querySelector('.nav-list');
+    navList.classList.toggle('open');
+    toggle.forEach((item) => {
+      item.classList.toggle('open');
+    });
+  };
+
   const changeContentOnLinkClick = (button, content) => {
     const navLink = document.getElementById(button);
     const footerNode = document.querySelector('.footer');
@@ -32,6 +39,14 @@ const UI = () => {
       const container = document.getElementById('content');
       container.insertBefore(content, footerNode);
       content.classList.add('display-content');
+      closeMenuList();
+    });
+  };
+
+  const toggleMenu = () => {
+    const hamburger = document.getElementById('hamburger-menu');
+    hamburger.addEventListener('click', () => {
+      closeMenuList();
     });
   };
 
@@ -52,9 +67,9 @@ const UI = () => {
       changeContentOnLinkClick('contact-us', contactPage);
       changeContentOnLinkClick('check-menu', menuPage);
 
+      toggleMenu();
     });
   };
-
   return { onLoad };
 };
 
