@@ -3,7 +3,7 @@
 This is a restaurant page project called Bakery. It is built in JavScript. The purpose of the project was to to learn and practice DOM manipulation by dynamically rendering a simple restaurant homepage by using JavaScript alone to generate the entire contents of the website.
 
 <div align="center">
-  <img src="images/screenshots.jpg" alt="screenshot">
+  <img src="dist/images/screenshots.jpg" alt="screenshot">
 </div>
 <br><br>
 
