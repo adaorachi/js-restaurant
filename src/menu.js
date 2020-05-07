@@ -9,7 +9,7 @@ const menu = (() => {
             <h4>Our Tasty Food</h4>
             <h1 class="display-4">The Menu</h1>
           </div>
-          <div class="row row-1 no-gutters" data-aos="fade-down">
+          <div class="row row-1 menu-row no-gutters" data-aos="fade-down">
             <div class="col-12 col-sm-6 col-xl-2 order-sm-1 order-xl-1">
               <img src="images/menu-item-1.jpg" alt="" class="img-fluid">
             </div>
@@ -48,7 +48,7 @@ const menu = (() => {
 
           </div>
 
-          <div class="row row-2 no-gutters" data-aos="fade-up">
+          <div class="row row-2 menu-row no-gutters" data-aos="fade-up">
             <div class="col-12 col-sm-6 col-xl-2 order-sm-2 order-xl-2">
               <img src="images/menu-item-4.jpg" alt="" class="img-fluid">
             </div>

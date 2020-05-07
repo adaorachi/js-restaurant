@@ -20,12 +20,26 @@ const UI = () => {
     container.appendChild(footerContent);
   };
 
-  const closeMenuList = () => {
+  const closeMenuList = (open = true) => {
     const toggle = document.querySelectorAll('.toggle');
     const navList = document.querySelector('.nav-list');
-    navList.classList.toggle('open');
-    toggle.forEach((item) => {
-      item.classList.toggle('open');
+    if (open) {
+      navList.classList.toggle('open');
+      toggle.forEach((item) => {
+        item.classList.toggle('open');
+      });
+    } else {
+      navList.classList.remove('open');
+      toggle.forEach((item) => {
+        item.classList.remove('open');
+      });
+    }
+  };
+
+  const toggleMenu = () => {
+    const hamburger = document.getElementById('hamburger-menu');
+    hamburger.addEventListener('click', () => {
+      closeMenuList();
     });
   };
 
@@ -39,14 +53,7 @@ const UI = () => {
       const container = document.getElementById('content');
       container.insertBefore(content, footerNode);
       content.classList.add('display-content');
-      closeMenuList();
-    });
-  };
-
-  const toggleMenu = () => {
-    const hamburger = document.getElementById('hamburger-menu');
-    hamburger.addEventListener('click', () => {
-      closeMenuList();
+      closeMenuList(false);
     });
   };
 

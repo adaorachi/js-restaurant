@@ -5,8 +5,8 @@ const about = (() => {
     createParentEle.id = 'about';
     createParentEle.innerHTML = `
     <div class="container-fluid main-content">
-      <section class="">
-        <div class="container w-50">
+      <section class="about-section">
+        <div class="container about-container">
           <div class="row align-items-lg-center">
             <div class="col-12 col-md-6 text-center text-md-left" data-aos="fade-up">
               <div class="section-heading mb-3">

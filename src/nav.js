@@ -1,6 +1,7 @@
 const nav = (() => {
   const navRender = () => {
     const navParent = document.createElement('header');
+    navParent.classList.add('header');
     navParent.innerHTML = `
         <div class="hamburger-menu" id="hamburger-menu">
           <i class="fas fa-bars toggle"></i>
