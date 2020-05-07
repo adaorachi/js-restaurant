@@ -57,13 +57,13 @@ Once you have installed the required package shown on the [Required Installation
 Clone the Repository,
 
 ```Shell
-your@pc:~$ git clone https://github.com/adaorachi/js-weather-app
+your@pc:~$ git clone https://github.com/adaorachi/js-restaurant
 ```
 
 Move into the downloaded folder
 
 ```Shell
-your@pc:~$ cd js-weather-app
+your@pc:~$ cd js-restaurant
 ```
 
 Get the dependencies needed for the app
@@ -85,9 +85,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
-## Authors
-
- **Author1**
+## Author
 
  MaryAnn Chukwuka
  - Github: [@adaorachi](https://github.com/adaorachi)

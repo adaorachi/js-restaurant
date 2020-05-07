@@ -1,3 +1,5 @@
+/* eslint import/no-unresolved: [2, { ignore: ['aos'] }] */
+
 import AOS from 'aos';
 
 import home from './home';
