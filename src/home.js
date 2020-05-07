@@ -12,7 +12,6 @@ const home = (() => {
           <i class="fas fa-times toggle"></i>
         </div>
        ${nav.navContent()}
-
         <div class="hero-text w-100 text-white px-2 px-sm-0">
           <h1 class="display-4">Welcome</h1>
           <p class="lead mb-4">Baked goods like you've never seen before</p>
